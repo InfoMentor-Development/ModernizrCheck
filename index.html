@@ -9,6 +9,15 @@
 
 <body>
 	<a href="javascript:(function() {
+	if(window.location !== 'http://reykjavik.is/allir-dagforeldrar-i-reykjavik'){
+		var co = confirm('Þetta bókamerki er einungis hannað fyrir: http://reykjavik.is/allir-dagforeldrar-i-reykjavik. Viltu fara þangað?');
+
+		if(co === true){
+			window.location = 'http://reykjavik.is/allir-dagforeldrar-i-reykjavik';
+		} else {
+			return;
+		}
+	}
     createLoader();
 
     var t = setInterval(function(){
@@ -341,6 +350,6 @@
         link.setAttribute('target', '_blank');
         parent.appendChild(link);
     }
-})();">DRAGIÐ ÞENNAN TENGIL Í BÓKAMERKI</a>
+})();">Rvk dagforeldrar</a>
 </body>
 </html>
