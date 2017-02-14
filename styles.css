@@ -4,6 +4,7 @@ ul li.on {color:#6de258;}
 ul li.off {color:#f44242;}
 
 a {
+	margin: 10px;
 	font: bold 14px Arial;
 	text-decoration: none;
 	background-color: #EEEEEE;
